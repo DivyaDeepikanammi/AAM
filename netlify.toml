@@ -1,9 +1,11 @@
 [build]
-  command = "cd frontend && npm install && npm run build"
+  command = "cd frontend && npm ci --include=dev && npm run build"
   publish = "frontend/dist/aam-frontend/browser"
+
+[build.environment]
+  NPM_CONFIG_PRODUCTION = "false"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
