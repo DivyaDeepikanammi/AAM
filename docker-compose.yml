@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: aam-postgres
+    environment:
+      POSTGRES_USER: aam
+      POSTGRES_PASSWORD: aam_password
+      POSTGRES_DB: aam
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aam -d aam"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: aam-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://aam:aam_password@postgres:5432/aam?schema=public
+      JWT_ACCESS_SECRET: change_me_access
+      JWT_REFRESH_SECRET: change_me_refresh
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    command: sh -c "npx prisma migrate deploy && node dist/main.js"
+
+volumes:
+  postgres_data:
+

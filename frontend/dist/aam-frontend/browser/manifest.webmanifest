@@ -1,0 +1,10 @@
+{
+  "name": "AAM",
+  "short_name": "AAM",
+  "theme_color": "#2f6f5e",
+  "background_color": "#fffaf3",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "description": "AAM"
+}

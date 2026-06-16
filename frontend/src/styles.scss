@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+
+html {
+  color-scheme: light;
+  @include mat.theme((
+    color: mat.$green-palette,
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fffaf3;
+  color: #24342f;
+  font-family: "Comic Sans MS", "Bradley Hand ITC", "Segoe Print", cursive;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+.mat-mdc-card {
+  border-radius: 8px !important;
+}
