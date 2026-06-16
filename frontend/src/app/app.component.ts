@@ -75,7 +75,7 @@ export class AppComponent implements OnInit, OnDestroy {
   });
 
   readonly missedItems = computed(() => this.checklist().filter((item) => item.status === 'Missed'));
-  readonly timeAlerts = computed(() => this.checklist()
+  public readonly timeAlerts = computed(() => this.checklist()
     .filter((item) => item.status === 'Pending' && this.isExpired(item))
     .map((item) => `${item.label} not marked during ${this.windowLabel(item)}`));
   readonly adminCards = computed(() => [
@@ -166,7 +166,7 @@ export class AppComponent implements OnInit, OnDestroy {
     return `${Math.max(5, value)}%`;
   }
 
-  buttonText(item: ChecklistItem) {
+  public buttonText(item: ChecklistItem) {
     if (item.status === 'Done') return 'Done';
     if (this.isBeforeWindow(item)) return this.windowLabel(item);
     if (this.isExpired(item)) return 'Missed';
@@ -180,7 +180,7 @@ export class AppComponent implements OnInit, OnDestroy {
     return now >= window.start && now <= window.end;
   }
 
-  windowLabel(item: ChecklistItem) {
+  public windowLabel(item: ChecklistItem) {
     return this.windows[item.id]?.label ?? item.time;
   }
 
