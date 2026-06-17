@@ -4,7 +4,7 @@ html {
   color-scheme: light;
   @include mat.theme((
     color: mat.$green-palette,
-    typography: Roboto,
+    typography: Arial,
     density: 0
   ));
 }
@@ -17,7 +17,7 @@ body {
   margin: 0;
   background: #fffaf3;
   color: #24342f;
-  font-family: "Comic Sans MS", "Bradley Hand ITC", "Segoe Print", cursive;
+  font-family: Arial, "Helvetica Neue", sans-serif;
 }
 
 button, input, textarea {

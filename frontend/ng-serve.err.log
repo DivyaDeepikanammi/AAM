@@ -1,0 +1,12 @@
+npm warn config production Use `--omit=dev` instead.
+Node.js version v25.8.1 detected.
+Prior to version 27, odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
+Prebundling has been configured but will not be used because scripts optimization is enabled.
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    

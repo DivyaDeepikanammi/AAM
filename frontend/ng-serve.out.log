@@ -1,0 +1,21 @@
+
+> aam-frontend@1.0.0 start
+> ng serve --host 0.0.0.0 --port 4200
+
+> Building...
+√ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 710.86 kB |               143.92 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 754.71 kB |               156.86 kB
+
+Application bundle generation complete. [4.100 seconds] - 2026-06-17T04:22:59.733Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.4:[1m4200[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.124.1:[1m4200[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.254.1:[1m4200[22m/[39m

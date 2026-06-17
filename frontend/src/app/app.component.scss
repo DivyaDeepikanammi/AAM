@@ -15,7 +15,7 @@
     radial-gradient(circle at top right, rgba(224, 242, 244, 0.72), transparent 28rem),
     var(--cream);
   color: var(--ink);
-  font-family: "Comic Sans MS", "Bradley Hand ITC", "Segoe Print", cursive;
+  font-family: Arial, "Helvetica Neue", sans-serif;
 }
 
 .app-shell {
@@ -44,6 +44,53 @@
   font: inherit;
   font-size: 32px;
   font-weight: 800;
+  letter-spacing: 0;
+}
+
+.admin-switch {
+  position: relative;
+}
+
+.hamburger-button {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: var(--soft-shadow);
+}
+
+.switch-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  display: grid;
+  min-width: 168px;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: var(--soft-shadow);
+}
+
+.switch-menu button {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
 }
 
 .desktop-nav {
@@ -82,59 +129,9 @@
   box-shadow: none !important;
 }
 
-.login-screen,
 .page {
   width: min(1180px, calc(100% - 28px));
   margin: 0 auto;
-}
-
-.login-screen {
-  display: grid;
-  min-height: calc(100vh - 90px);
-  place-content: center;
-  gap: 26px;
-}
-
-.login-title {
-  text-align: center;
-  font-size: clamp(54px, 15vw, 132px);
-  font-weight: 900;
-  line-height: 0.9;
-}
-
-.login-cards {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 300px));
-  gap: 18px;
-}
-
-.login-card {
-  display: grid;
-  min-height: 210px;
-  place-items: center;
-  gap: 12px;
-  border: 0;
-  border-radius: 30px;
-  color: var(--ink);
-  cursor: pointer;
-  font: inherit;
-  font-size: 28px;
-  font-weight: 800;
-  box-shadow: var(--soft-shadow);
-}
-
-.login-card mat-icon {
-  width: 54px;
-  height: 54px;
-  font-size: 54px;
-}
-
-.mom-login {
-  background: var(--light-pink);
-}
-
-.admin-login {
-  background: var(--ice-blue);
 }
 
 .plain-link {
@@ -170,13 +167,13 @@ h1 {
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.15;
 }
 
 .soft-card {
   border: 0 !important;
-  border-radius: 26px !important;
+  border-radius: 8px !important;
   background: rgba(255, 255, 255, 0.9) !important;
   box-shadow: var(--soft-shadow) !important;
   color: var(--ink);
@@ -222,7 +219,11 @@ h2 {
 }
 
 .card-grid {
-  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.task-grid {
+  align-items: stretch;
 }
 
 .task-card,
@@ -239,8 +240,9 @@ h2 {
 
 .task-card {
   display: grid;
-  gap: 12px;
-  min-height: 184px;
+  gap: 10px;
+  min-height: 164px;
+  align-content: space-between;
 }
 
 .task-head {
@@ -254,6 +256,7 @@ h2 {
   margin-top: 8px;
   color: rgba(49, 42, 38, 0.72);
   line-height: 1.25;
+  font-size: 14px;
 }
 
 .window-note {
@@ -271,9 +274,17 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding: 8px 10px;
-  border-radius: 18px;
+  border-radius: 8px;
   background: rgba(255, 253, 247, 0.72);
   font-size: 14px;
+}
+
+.task-meta span,
+.task-meta b,
+.pill-line span,
+.pill-line b {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .pill-line {
@@ -301,6 +312,42 @@ h2 {
   background: var(--soft-yellow) !important;
 }
 
+.meal-one {
+  background: #ffdde5 !important;
+}
+
+.meal-two {
+  background: #ffe797 !important;
+}
+
+.meal-three {
+  background: #dceeed !important;
+}
+
+.tablet-one {
+  background: #e0f2f4 !important;
+}
+
+.tablet-two {
+  background: #e9e09f !important;
+}
+
+.tablet-three {
+  background: #f2d6df !important;
+}
+
+.walk-tone {
+  background: #d8eac1 !important;
+}
+
+.water-tone {
+  background: #cfe9f1 !important;
+}
+
+.today-task-card {
+  background: #f8ead0 !important;
+}
+
 .missed,
 .rose {
   background: var(--light-pink) !important;
@@ -316,6 +363,22 @@ h2 {
 
 .two-column {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.section-title h2 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.section-title button {
+  flex: 0 0 auto;
 }
 
 .mini-row,
@@ -388,29 +451,137 @@ h2 {
   display: grid;
   gap: 10px;
   padding: 14px;
-  border-radius: 22px;
+  border-radius: 8px;
   background: var(--ice-blue);
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
+.recipe-list {
+  margin-top: 0;
+}
+
 .empty-note {
   padding: 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   background: rgba(224, 242, 244, 0.72);
 }
 
 .recipe-detail {
-  position: fixed;
-  inset: auto 20px 20px auto;
-  z-index: 20;
+  z-index: 1;
   display: grid;
-  width: min(520px, calc(100% - 40px));
-  max-height: 78vh;
+  width: min(760px, 100%);
+  max-height: none;
   overflow: auto;
   gap: 12px;
   padding: 22px;
   background: #fff !important;
+}
+
+.inline-detail {
+  position: static;
+}
+
+.meal-menu {
+  min-height: 42px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.macro-grid span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.78);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.macro-grid b {
+  font-size: 15px;
+}
+
+.menu-picker {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.menu-picker button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--ice-blue);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.menu-picker strong,
+.menu-picker span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.reason-field {
+  width: 100%;
+}
+
+.graph-card {
+  display: grid;
+  gap: 14px;
+}
+
+.mini-graph {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  height: 150px;
+  padding-top: 8px;
+}
+
+.mini-graph span {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  min-height: 28px;
+  align-content: start;
+  justify-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border-radius: 8px 8px 4px 4px;
+  background: var(--muted-blue);
+  font-size: 12px;
+}
+
+.mini-graph em {
+  font-style: normal;
+}
+
+.health-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.health-line span {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.78);
 }
 
 .close {
@@ -444,7 +615,7 @@ h2 {
   left: 14px;
   z-index: 12;
   display: none;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
   gap: 4px;
   padding: 8px;
   border-radius: 26px;
@@ -470,13 +641,16 @@ h2 {
 
   .summary-row,
   .two-column,
-  .login-cards,
   .page-head {
     grid-template-columns: 1fr;
   }
 
   .page-head {
     display: grid;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -485,13 +659,12 @@ h2 {
     padding: 12px 14px;
   }
 
-  .login-card {
-    min-height: 150px;
-    font-size: 24px;
-  }
-
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .macro-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .mini-row,

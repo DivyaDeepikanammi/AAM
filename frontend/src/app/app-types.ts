@@ -7,6 +7,7 @@ export interface ChecklistItem {
   time: string;
   status: TaskStatus;
   completedAt?: string;
+  missedReason?: string;
 }
 
 export interface MealItem {
@@ -15,6 +16,15 @@ export interface MealItem {
   curry: string;
   portion: string;
   alternative: string;
+  nutrition?: NutritionInfo;
+}
+
+export interface NutritionInfo {
+  calories: number;
+  carbs: number;
+  protein: number;
+  fibre: number;
+  fat: number;
 }
 
 export interface WeeklyPlanItem {

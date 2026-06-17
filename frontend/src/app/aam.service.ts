@@ -43,6 +43,12 @@ export class AamService {
     );
   }
 
+  saveTodayMeal(todayMeal: MealItem[]) {
+    return this.http.put(this.firebaseUrl('aam/todayMeal'), todayMeal).pipe(
+      catchError(() => of(null)),
+    );
+  }
+
   listenChecklist(onValue: (items: ChecklistItem[]) => void) {
     const source = new EventSource(this.firebaseUrl('aam/checklist'));
     const handleEvent = (event: MessageEvent<string>) => {
