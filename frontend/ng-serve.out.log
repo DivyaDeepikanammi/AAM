@@ -19,3 +19,1290 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.4:[1m4200[22m/[39m
   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.124.1:[1m4200[22m/[39m
   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.254.1:[1m4200[22m/[39m
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 711.29 kB |               143.96 kB
+
+Application bundle generation complete. [32.016 seconds] - 2026-06-17T05:55:49.552Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.17 kB |               144.36 kB
+
+Application bundle generation complete. [15.153 seconds] - 2026-06-17T05:56:04.848Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.17 kB |               144.27 kB
+
+Application bundle generation complete. [3.531 seconds] - 2026-06-17T06:05:35.321Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.05 kB |               144.23 kB
+
+Application bundle generation complete. [3.714 seconds] - 2026-06-17T06:05:49.048Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.49 kB |               144.34 kB
+
+Application bundle generation complete. [2.192 seconds] - 2026-06-17T06:06:02.660Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.26 kB |               144.36 kB
+
+Application bundle generation complete. [2.403 seconds] - 2026-06-17T06:08:40.899Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.21 kB |               144.42 kB
+
+Application bundle generation complete. [7.599 seconds] - 2026-06-17T06:09:47.819Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.22 kB |               144.22 kB
+
+Application bundle generation complete. [3.915 seconds] - 2026-06-17T06:13:52.683Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.24 kB |               144.22 kB
+
+Application bundle generation complete. [2.980 seconds] - 2026-06-17T06:14:31.780Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.04 kB |               144.21 kB
+
+Application bundle generation complete. [1.938 seconds] - 2026-06-17T06:15:02.768Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 712.98 kB |               144.21 kB
+
+Application bundle generation complete. [2.161 seconds] - 2026-06-17T06:17:30.979Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.09 kB |               144.16 kB
+
+Application bundle generation complete. [2.369 seconds] - 2026-06-17T06:20:20.908Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 713.71 kB |               144.34 kB
+
+Application bundle generation complete. [2.090 seconds] - 2026-06-17T06:20:49.512Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.27 kB |               144.37 kB
+
+Application bundle generation complete. [2.168 seconds] - 2026-06-17T06:22:37.772Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.55 kB |               144.37 kB
+
+Application bundle generation complete. [2.170 seconds] - 2026-06-17T06:22:55.831Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.73 kB |               144.47 kB
+
+Application bundle generation complete. [2.305 seconds] - 2026-06-17T06:23:16.361Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.71 kB |               144.51 kB
+
+Application bundle generation complete. [2.749 seconds] - 2026-06-17T06:28:35.656Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.96 kB |               144.59 kB
+
+Application bundle generation complete. [2.167 seconds] - 2026-06-17T06:28:53.779Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.13 kB |               144.47 kB
+
+Application bundle generation complete. [2.219 seconds] - 2026-06-17T06:29:26.498Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 714.99 kB |               144.54 kB
+
+Application bundle generation complete. [2.126 seconds] - 2026-06-17T06:31:36.810Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.108 seconds] - 2026-06-17T06:34:16.655Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 715.34 kB |               144.58 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 759.18 kB |               157.52 kB
+
+Application bundle generation complete. [2.124 seconds] - 2026-06-17T06:35:11.001Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.67 kB |               144.56 kB
+
+Application bundle generation complete. [2.057 seconds] - 2026-06-17T06:35:42.539Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.43 kB |               144.38 kB
+
+Application bundle generation complete. [1.992 seconds] - 2026-06-17T06:37:53.182Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.41 kB |               144.53 kB
+
+Application bundle generation complete. [1.934 seconds] - 2026-06-17T06:38:26.800Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.58 kB |               144.62 kB
+
+Application bundle generation complete. [2.046 seconds] - 2026-06-17T06:40:54.818Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.58 kB |               144.76 kB
+
+Application bundle generation complete. [1.987 seconds] - 2026-06-17T06:41:14.107Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.58 kB |               144.55 kB
+
+Application bundle generation complete. [2.060 seconds] - 2026-06-17T06:43:44.650Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 715.68 kB |               144.56 kB
+
+Application bundle generation complete. [2.646 seconds] - 2026-06-17T06:45:13.063Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 716.15 kB |               144.68 kB
+
+Application bundle generation complete. [1.892 seconds] - 2026-06-17T06:45:33.803Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.767 seconds] - 2026-06-17T06:45:57.521Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.984 seconds] - 2026-06-17T06:46:10.986Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.759 seconds] - 2026-06-17T06:48:37.020Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 718.08 kB |               144.91 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 761.93 kB |               157.85 kB
+
+Application bundle generation complete. [2.055 seconds] - 2026-06-17T06:49:21.726Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.15 kB |               145.02 kB
+
+Application bundle generation complete. [2.112 seconds] - 2026-06-17T06:52:02.341Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.55 kB |               145.15 kB
+
+Application bundle generation complete. [2.354 seconds] - 2026-06-17T06:52:23.019Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.66 kB |               145.03 kB
+
+Application bundle generation complete. [2.174 seconds] - 2026-06-17T06:56:07.981Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.55 kB |               145.07 kB
+
+Application bundle generation complete. [2.101 seconds] - 2026-06-17T06:59:40.476Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.21 kB |               144.97 kB
+
+Application bundle generation complete. [2.093 seconds] - 2026-06-17T07:00:11.700Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 717.70 kB |               144.90 kB
+
+Application bundle generation complete. [2.030 seconds] - 2026-06-17T07:00:32.247Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 717.23 kB |               144.92 kB
+
+Application bundle generation complete. [2.153 seconds] - 2026-06-17T07:01:50.527Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 717.75 kB |               144.93 kB
+
+Application bundle generation complete. [2.251 seconds] - 2026-06-17T07:06:56.752Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.32 kB |               145.01 kB
+
+Application bundle generation complete. [2.118 seconds] - 2026-06-17T07:07:30.138Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 718.34 kB |               145.13 kB
+
+Application bundle generation complete. [2.039 seconds] - 2026-06-17T07:12:15.695Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 719.53 kB |               145.01 kB
+
+Application bundle generation complete. [2.739 seconds] - 2026-06-17T07:16:27.097Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 720.53 kB |               145.21 kB
+
+Application bundle generation complete. [2.213 seconds] - 2026-06-17T07:20:10.178Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.20 kB |               145.45 kB
+
+Application bundle generation complete. [2.129 seconds] - 2026-06-17T07:20:27.676Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.16 kB |               145.31 kB
+
+Application bundle generation complete. [2.163 seconds] - 2026-06-17T07:23:46.950Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.64 kB |               145.44 kB
+
+Application bundle generation complete. [2.225 seconds] - 2026-06-17T07:24:15.296Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.67 kB |               145.25 kB
+
+Application bundle generation complete. [2.322 seconds] - 2026-06-17T07:26:21.577Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.77 kB |               145.31 kB
+
+Application bundle generation complete. [2.190 seconds] - 2026-06-17T07:26:52.662Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.80 kB |               145.37 kB
+
+Application bundle generation complete. [2.173 seconds] - 2026-06-17T07:27:23.888Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 721.86 kB |               145.40 kB
+
+Application bundle generation complete. [2.245 seconds] - 2026-06-17T07:31:34.691Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 722.58 kB |               145.39 kB
+
+Application bundle generation complete. [2.387 seconds] - 2026-06-17T07:32:12.462Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.115 seconds] - 2026-06-17T07:44:54.883Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.981 seconds] - 2026-06-17T07:45:17.152Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.731 seconds] - 2026-06-17T07:45:44.372Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [0.752 seconds] - 2026-06-17T07:46:03.629Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.255 seconds] - 2026-06-17T07:46:43.318Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 730.74 kB |               147.02 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 774.59 kB |               159.97 kB
+
+Application bundle generation complete. [4.293 seconds] - 2026-06-17T07:47:37.608Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 738.94 kB |               148.70 kB
+
+Application bundle generation complete. [2.393 seconds] - 2026-06-17T07:49:28.192Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 739.09 kB |               148.76 kB
+
+Application bundle generation complete. [2.104 seconds] - 2026-06-17T07:49:49.866Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 739.48 kB |               148.66 kB
+
+Application bundle generation complete. [2.501 seconds] - 2026-06-17T07:51:23.173Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 740.00 kB |               148.88 kB
+
+Application bundle generation complete. [2.516 seconds] - 2026-06-17T08:12:23.214Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 740.01 kB |               148.89 kB
+
+Application bundle generation complete. [2.143 seconds] - 2026-06-17T08:12:34.372Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 740.02 kB |               149.04 kB
+
+Application bundle generation complete. [4.770 seconds] - 2026-06-17T08:12:46.203Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 740.09 kB |               148.90 kB
+
+Application bundle generation complete. [3.156 seconds] - 2026-06-17T08:12:53.116Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.04 kB |               149.00 kB
+
+Application bundle generation complete. [2.294 seconds] - 2026-06-17T08:13:27.278Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.15 kB |               148.96 kB
+
+Application bundle generation complete. [2.320 seconds] - 2026-06-17T08:13:46.158Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.29 kB |               149.07 kB
+
+Application bundle generation complete. [4.313 seconds] - 2026-06-17T08:14:00.012Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.15 kB |               149.09 kB
+
+Application bundle generation complete. [3.139 seconds] - 2026-06-17T08:17:35.179Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.56 kB |               149.01 kB
+
+Application bundle generation complete. [2.857 seconds] - 2026-06-17T08:19:23.489Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.56 kB |               149.00 kB
+
+Application bundle generation complete. [2.971 seconds] - 2026-06-17T08:20:03.843Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.63 kB |               149.02 kB
+
+Application bundle generation complete. [2.506 seconds] - 2026-06-17T08:23:23.375Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.65 kB |               149.10 kB
+
+Application bundle generation complete. [2.537 seconds] - 2026-06-17T08:23:56.056Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.68 kB |               149.17 kB
+
+Application bundle generation complete. [2.577 seconds] - 2026-06-17T08:24:25.730Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.68 kB |               149.13 kB
+
+Application bundle generation complete. [2.777 seconds] - 2026-06-17T08:24:41.015Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.59 kB |               149.18 kB
+
+Application bundle generation complete. [2.737 seconds] - 2026-06-17T08:29:20.889Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.50 kB |               149.08 kB
+
+Application bundle generation complete. [2.506 seconds] - 2026-06-17T08:30:47.837Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.50 kB |               149.06 kB
+
+Application bundle generation complete. [2.501 seconds] - 2026-06-17T08:31:42.441Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.39 kB |               149.08 kB
+
+Application bundle generation complete. [2.135 seconds] - 2026-06-17T08:36:02.388Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.07 kB |               149.02 kB
+
+Application bundle generation complete. [2.454 seconds] - 2026-06-17T08:36:22.698Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.37 kB |               148.91 kB
+
+Application bundle generation complete. [2.353 seconds] - 2026-06-17T08:38:32.033Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 741.47 kB |               148.93 kB
+
+Application bundle generation complete. [2.355 seconds] - 2026-06-17T08:45:53.133Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 742.31 kB |               149.26 kB
+
+Application bundle generation complete. [2.353 seconds] - 2026-06-17T08:46:16.525Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 743.51 kB |               149.20 kB
+
+Application bundle generation complete. [2.525 seconds] - 2026-06-17T08:46:40.856Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 744.47 kB |               149.36 kB
+
+Application bundle generation complete. [2.422 seconds] - 2026-06-17T08:47:04.194Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 744.38 kB |               149.28 kB
+
+Application bundle generation complete. [2.387 seconds] - 2026-06-17T08:50:00.832Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.537 seconds] - 2026-06-17T08:52:51.912Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.087 seconds] - 2026-06-17T08:53:41.103Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.026 seconds] - 2026-06-17T08:53:51.414Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 745.75 kB |               149.49 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 789.60 kB |               162.43 kB
+
+Application bundle generation complete. [2.663 seconds] - 2026-06-17T08:54:09.781Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 745.85 kB |               149.44 kB
+
+Application bundle generation complete. [2.625 seconds] - 2026-06-17T09:00:02.453Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 746.41 kB |               149.66 kB
+
+Application bundle generation complete. [2.726 seconds] - 2026-06-17T09:00:58.108Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 746.55 kB |               149.58 kB
+
+Application bundle generation complete. [2.700 seconds] - 2026-06-17T09:01:51.205Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.14 kB |               149.64 kB
+
+Application bundle generation complete. [3.917 seconds] - 2026-06-17T09:02:36.741Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.39 kB |               149.77 kB
+
+Application bundle generation complete. [2.850 seconds] - 2026-06-17T09:02:48.958Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.46 kB |               149.92 kB
+
+Application bundle generation complete. [2.321 seconds] - 2026-06-17T09:11:08.362Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.50 kB |               149.81 kB
+
+Application bundle generation complete. [2.450 seconds] - 2026-06-17T09:11:21.730Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.58 kB |               149.73 kB
+
+Application bundle generation complete. [2.427 seconds] - 2026-06-17T09:12:31.958Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 747.58 kB |               149.73 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 791.42 kB |               162.67 kB
+
+Application bundle generation complete. [1.406 seconds] - 2026-06-17T09:23:06.029Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [1.351 seconds] - 2026-06-17T09:24:07.388Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 747.65 kB |               149.92 kB
+
+Application bundle generation complete. [3.899 seconds] - 2026-06-17T09:25:30.774Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 748.05 kB |               149.99 kB
+
+Application bundle generation complete. [3.785 seconds] - 2026-06-17T09:25:48.188Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.87 kB |               150.34 kB
+
+Application bundle generation complete. [4.102 seconds] - 2026-06-17T09:26:17.588Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.87 kB |               150.26 kB
+
+Application bundle generation complete. [3.107 seconds] - 2026-06-17T09:27:19.803Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.87 kB |               150.31 kB
+
+Application bundle generation complete. [3.942 seconds] - 2026-06-17T09:27:37.620Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.82 kB |               150.30 kB
+
+Application bundle generation complete. [2.837 seconds] - 2026-06-17T09:28:59.119Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.74 kB |               150.31 kB
+
+Application bundle generation complete. [3.089 seconds] - 2026-06-17T09:29:12.991Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 749.74 kB |               150.31 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 793.58 kB |               163.26 kB
+
+Application bundle generation complete. [1.358 seconds] - 2026-06-17T09:36:35.825Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.74 kB |               150.20 kB
+
+Application bundle generation complete. [2.626 seconds] - 2026-06-17T09:37:23.486Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.72 kB |               150.30 kB
+
+Application bundle generation complete. [2.549 seconds] - 2026-06-17T09:38:06.786Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.73 kB |               150.23 kB
+
+Application bundle generation complete. [2.818 seconds] - 2026-06-17T09:43:15.605Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.78 kB |               150.29 kB
+
+Application bundle generation complete. [2.555 seconds] - 2026-06-17T09:43:28.623Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 749.78 kB |               150.29 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 793.63 kB |               163.23 kB
+
+Application bundle generation complete. [1.332 seconds] - 2026-06-17T09:51:26.722Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 749.78 kB |               150.29 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 793.63 kB |               163.23 kB
+
+Application bundle generation complete. [1.474 seconds] - 2026-06-17T09:54:08.458Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 749.78 kB |               150.29 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 793.63 kB |               163.23 kB
+
+Application bundle generation complete. [1.328 seconds] - 2026-06-17T09:54:44.625Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 749.80 kB |               150.29 kB
+
+Application bundle generation complete. [2.688 seconds] - 2026-06-17T09:56:14.329Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 750.12 kB |               150.30 kB
+
+Application bundle generation complete. [2.823 seconds] - 2026-06-17T09:56:30.599Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 750.21 kB |               150.38 kB
+
+Application bundle generation complete. [4.911 seconds] - 2026-06-17T09:57:25.950Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 750.49 kB |               150.44 kB
+
+Application bundle generation complete. [2.737 seconds] - 2026-06-17T09:57:53.599Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.60 kB |               150.63 kB
+
+Application bundle generation complete. [2.812 seconds] - 2026-06-17T09:58:15.081Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.73 kB |               150.63 kB
+
+Application bundle generation complete. [2.308 seconds] - 2026-06-17T09:58:27.794Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.71 kB |               150.61 kB
+
+Application bundle generation complete. [2.895 seconds] - 2026-06-17T10:00:38.726Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.77 kB |               150.61 kB
+
+Application bundle generation complete. [3.526 seconds] - 2026-06-17T10:00:55.426Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 752.77 kB |               150.61 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 796.62 kB |               163.55 kB
+
+Application bundle generation complete. [1.357 seconds] - 2026-06-17T10:01:19.096Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.44 kB |               150.63 kB
+
+Application bundle generation complete. [2.622 seconds] - 2026-06-17T10:02:48.219Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 752.44 kB |               150.69 kB
+
+Application bundle generation complete. [2.649 seconds] - 2026-06-17T10:03:11.776Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 751.92 kB |               150.55 kB
+
+Application bundle generation complete. [2.797 seconds] - 2026-06-17T10:20:14.230Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.084 seconds] - 2026-06-17T10:20:44.123Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 725.20 kB |               147.64 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 769.04 kB |               160.59 kB
+
+Application bundle generation complete. [2.649 seconds] - 2026-06-17T10:21:13.394Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.19 kB |               147.46 kB
+
+Application bundle generation complete. [2.445 seconds] - 2026-06-17T10:21:36.862Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.48 kB |               147.45 kB
+
+Application bundle generation complete. [2.423 seconds] - 2026-06-17T10:22:09.576Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.02 kB |               147.52 kB
+
+Application bundle generation complete. [2.414 seconds] - 2026-06-17T10:22:25.437Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.13 kB |               147.38 kB
+
+Application bundle generation complete. [2.854 seconds] - 2026-06-17T10:28:05.784Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.32 kB |               147.40 kB
+
+Application bundle generation complete. [2.783 seconds] - 2026-06-17T10:28:33.594Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.437 seconds] - 2026-06-17T10:36:38.841Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 723.36 kB |               147.51 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 767.21 kB |               160.45 kB
+
+Application bundle generation complete. [2.736 seconds] - 2026-06-17T10:36:47.798Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 723.39 kB |               147.54 kB
+
+Application bundle generation complete. [2.756 seconds] - 2026-06-17T10:38:53.093Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.338 seconds] - 2026-06-17T10:41:17.769Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.270 seconds] - 2026-06-17T10:41:28.747Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.890 seconds] - 2026-06-17T10:41:44.044Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 725.20 kB |               147.93 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 769.05 kB |               160.88 kB
+
+Application bundle generation complete. [2.566 seconds] - 2026-06-17T10:42:01.652Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 725.26 kB |               147.84 kB
+
+Application bundle generation complete. [2.347 seconds] - 2026-06-17T10:44:08.540Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 725.19 kB |               147.79 kB
+
+Application bundle generation complete. [2.985 seconds] - 2026-06-17T10:45:35.222Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 725.58 kB |               147.75 kB
+
+Application bundle generation complete. [2.745 seconds] - 2026-06-17T10:52:11.526Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 726.10 kB |               147.97 kB
+
+Application bundle generation complete. [2.691 seconds] - 2026-06-17T10:52:52.477Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 726.97 kB |               148.14 kB
+
+Application bundle generation complete. [2.775 seconds] - 2026-06-17T10:53:09.631Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 727.21 kB |               148.09 kB
+
+Application bundle generation complete. [3.525 seconds] - 2026-06-17T11:04:13.285Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 727.29 kB |               148.16 kB
+
+Application bundle generation complete. [4.103 seconds] - 2026-06-17T11:05:11.957Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.799 seconds] - 2026-06-17T11:05:28.801Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [1.742 seconds] - 2026-06-17T11:05:45.003Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 733.13 kB |               148.90 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 776.97 kB |               161.84 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-B9vx_kwY.js   | index-esm     |  29.36 kB |                 7.53 kB
+chunk-BLBYT5CM.js   | -             |  28.04 kB |                 8.12 kB
+chunk-zRZdWqpv.js   | index-esm     | 597 bytes |               597 bytes
+
+Application bundle generation complete. [9.240 seconds] - 2026-06-17T11:06:20.322Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 733.30 kB |               149.00 kB
+
+Application bundle generation complete. [4.901 seconds] - 2026-06-17T11:06:43.654Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 733.38 kB |               148.81 kB
+
+Application bundle generation complete. [4.846 seconds] - 2026-06-17T11:07:18.887Z
+
+Component update sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 733.44 kB |               148.95 kB
+
+Application bundle generation complete. [5.059 seconds] - 2026-06-17T11:16:35.566Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 733.44 kB |               148.95 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 777.28 kB |               161.89 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-B9vx_kwY.js   | index-esm     |  29.36 kB |                 7.53 kB
+chunk-BLBYT5CM.js   | -             |  28.04 kB |                 8.12 kB
+chunk-zRZdWqpv.js   | index-esm     | 597 bytes |               597 bytes
+
+Application bundle generation complete. [3.206 seconds] - 2026-06-17T11:16:48.516Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 733.49 kB |               149.12 kB
+
+Application bundle generation complete. [7.342 seconds] - 2026-06-17T11:20:16.244Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Application bundle generation failed. [2.609 seconds] - 2026-06-17T11:22:54.443Z
+
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 733.28 kB |               148.99 kB
+polyfills.js        | polyfills     |  35.78 kB |                11.63 kB
+styles.css          | styles        |   8.06 kB |                 1.31 kB
+
+                    | Initial total | 777.13 kB |               161.93 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-B9vx_kwY.js   | index-esm     |  29.36 kB |                 7.53 kB
+chunk-BLBYT5CM.js   | -             |  28.04 kB |                 8.12 kB
+chunk-zRZdWqpv.js   | index-esm     | 597 bytes |               597 bytes
+
+Application bundle generation complete. [8.731 seconds] - 2026-06-17T11:23:26.040Z
+
+Page reload sent to client(s).
+> Changes detected. Rebuilding...
+√ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size | Estimated transfer size
+main.js             | main  | 733.72 kB |               149.01 kB
+
+Application bundle generation complete. [7.798 seconds] - 2026-06-17T11:24:01.785Z
+
+Component update sent to client(s).

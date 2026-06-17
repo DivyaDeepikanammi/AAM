@@ -10,3 +10,672 @@ Binding this server to an open connection can result in compromising your applic
 computer. Using a different host than the one passed to the "--host" flag might result in
 websocket connection issues.
     
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'reasonOpen' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:61:94:
+[37m      61 │ ...on" type="button" (click)="[32mreasonOpen[37m.set(reasonOpen() === item...
+         ╵                               [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'reasonOpen' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:61:109:
+[37m      61 │ ...n" (click)="reasonOpen.set([32mreasonOpen[37m() === item.id ? null : it...
+         ╵                               [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'reasonOpen' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:67:59:
+[37m      67 │ ...tem.status === 'Missed' && [32mreasonOpen[37m() === item.id" class="rea...
+         ╵                               [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:84:
+[37m      122 │ ...ck)="saveSugarReadings({ [32mfastingSugar[37m: fasting.value, ppSugar:...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:113:
+[37m      122 │ ...astingSugar: fasting.value, [32mppSugar[37m: pp.value, hba1c: hba1c.va...
+          ╵                                [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:132:
+[37m      122 │ ...ng.value, ppSugar: pp.value, [32mhba1c[37m: hba1c.value, bp: bp.value,...
+          ╵                                 [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:166:
+[37m      122 │ ... hba1c.value, bp: bp.value, [32mweight[37m: weight.value, notes: notes...
+          ╵                                [32m~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:84:
+[37m      122 │ ...ck)="saveSugarReadings({ [32mfastingSugar[37m: fasting.value, ppSugar:...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:113:
+[37m      122 │ ...astingSugar: fasting.value, [32mppSugar[37m: pp.value, hba1c: hba1c.va...
+          ╵                                [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:132:
+[37m      122 │ ...ng.value, ppSugar: pp.value, [32mhba1c[37m: hba1c.value, bp: bp.value,...
+          ╵                                 [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:122:166:
+[37m      122 │ ... hba1c.value, bp: bp.value, [32mweight[37m: weight.value, notes: notes...
+          ╵                                [32m~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:33:15:
+[37m      33 │   templateUrl: [32m'./app.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'fastingSugar' comes from an index signature, so it must be accessed with ['fastingSugar'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:200:48:
+[37m      200 │       fastingSugar: this.numberOrUndefined(form.[32mfastingSugar[37m),
+          ╵                                                 [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'ppSugar' comes from an index signature, so it must be accessed with ['ppSugar'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:201:43:
+[37m      201 │       ppSugar: this.numberOrUndefined(form.[32mppSugar[37m),
+          ╵                                            [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'hba1c' comes from an index signature, so it must be accessed with ['hba1c'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:202:41:
+[37m      202 │       hba1c: this.numberOrUndefined(form.[32mhba1c[37m),
+          ╵                                          [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'bp' comes from an index signature, so it must be accessed with ['bp'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:203:15:
+[37m      203 │       bp: form.[32mbp[37m,
+          ╵                [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'weight' comes from an index signature, so it must be accessed with ['weight'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:204:42:
+[37m      204 │       weight: this.numberOrUndefined(form.[32mweight[37m),
+          ╵                                           [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS4111: Property 'notes' comes from an index signature, so it must be accessed with ['notes'].[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:205:18:
+[37m      205 │       notes: form.[32mnotes[37m || 'Sugar readings updated',
+          ╵                   [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:29:6:
+[37m      29 │ const [32mBREAKFAST_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:50:6:
+[37m      50 │ const [32mLUNCH_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:81:6:
+[37m      81 │ const [32mDINNER_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'vegetable' does not exist on type 'MealOption'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:195:111:
+[37m      195 │ ..."recipe.name">{{ recipe.name }} - {{ recipe.[32mvegetable[37m }}</option>
+          ╵                                                [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:129:15:
+[37m      129 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:29:6:
+[37m      29 │ const [32mBREAKFAST_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:50:6:
+[37m      50 │ const [32mLUNCH_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:81:6:
+[37m      81 │ const [32mDINNER_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'optionNutrition' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:385:22:
+[37m      385 │       nutrition: this.[32moptionNutrition[37m(option),
+          ╵                       [32m~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:29:6:
+[37m      29 │ const [32mBREAKFAST_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:50:6:
+[37m      50 │ const [32mLUNCH_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:81:6:
+[37m      81 │ const [32mDINNER_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'optionNutrition' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:385:22:
+[37m      385 │       nutrition: this.[32moptionNutrition[37m(option),
+          ╵                       [32m~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Breakfast"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:29:6:
+[37m      29 │ const [32mBREAKFAST_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Lunch"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:50:6:
+[37m      50 │ const [32mLUNCH_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }[]' is not assignable to type 'MealOption[]'.
+  Type '{ meal: "Dinner"; name: string | number; menu: string | number; curry: string | number; portion: string | number; protein: number; note: string; }' is not assignable to type 'MealOption'.
+    Types of property 'name' are incompatible.
+      Type 'string | number' is not assignable to type 'string'.
+        Type 'number' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:81:6:
+[37m      81 │ const [32mDINNER_OPTIONS[37m: MealOption[] = [
+         ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '([name, menu, curry, portion, protein]: MealOptionTuple) => { meal: "Breakfast"; name: string; menu: string; curry: string; portion: string; protein: number; }' is not assignable to parameter of type '(value: (string | number)[], index: number, array: (string | number)[][]) => { meal: "Breakfast"; name: string; menu: string; curry: string; portion: string; protein: number; }'.
+  Types of parameters '__0' and 'value' are incompatible.
+    Type '(string | number)[]' is not assignable to type 'MealOptionTuple'.
+      Target requires 5 element(s) but source may have fewer.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:50:6:
+[37m      50 │ ].map([32m([name, menu, curry, portion, protein]: MealOptionTuple) => [37m...
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '([name, menu, curry, portion, protein]: MealOptionTuple) => { meal: "Lunch"; name: string; menu: string; curry: string; portion: string; protein: number; note: string; }' is not assignable to parameter of type '(value: (string | number)[], index: number, array: (string | number)[][]) => { meal: "Lunch"; name: string; menu: string; curry: string; portion: string; protein: number; note: string; }'.
+  Types of parameters '__0' and 'value' are incompatible.
+    Type '(string | number)[]' is not assignable to type 'MealOptionTuple'.
+      Target requires 5 element(s) but source may have fewer.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:81:6:
+[37m      81 │ ].map([32m([name, menu, curry, portion, protein]: MealOptionTuple) => [37m...
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '([name, menu, curry, portion, protein]: MealOptionTuple) => { meal: "Dinner"; name: string; menu: string; curry: string; portion: string; protein: number; note: string; }' is not assignable to parameter of type '(value: (string | number)[], index: number, array: (string | number)[][]) => { meal: "Dinner"; name: string; menu: string; curry: string; portion: string; protein: number; note: string; }'.
+  Types of parameters '__0' and 'value' are incompatible.
+    Type '(string | number)[]' is not assignable to type 'MealOptionTuple'.
+      Target requires 5 element(s) but source may have fewer.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:112:6:
+[37m      112 │ ].map([32m([name, menu, curry, portion, protein]: MealOptionTuple) =>[37m...
+          ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:34:
+[37m      213 │ ...    <p *ngIf="mealRecipe()?.[32mprotein[37m"><b>Protein:</b> {{ mealRe...
+          ╵                                [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:76:
+[37m      213 │ ...ecipe()?.protein"><b>Protein:</b> {{ mealRecipe()?.[32mprotein[37m }}</p>
+          ╵                                                       [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:34:
+[37m      214 │ ...     <p *ngIf="mealRecipe()?.[32mfiber[37m"><b>Fiber:</b> {{ mealRecip...
+          ╵                                 [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:72:
+[37m      214 │ ..."mealRecipe()?.fiber"><b>Fiber:</b> {{ mealRecipe()?.[32mfiber[37m }}</p>
+          ╵                                                         [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:34:
+[37m      213 │ ...    <p *ngIf="mealRecipe()?.[32mprotein[37m"><b>Protein:</b> {{ mealRe...
+          ╵                                [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:76:
+[37m      213 │ ...ecipe()?.protein"><b>Protein:</b> {{ mealRecipe()?.[32mprotein[37m }}</p>
+          ╵                                                       [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:34:
+[37m      214 │ ...     <p *ngIf="mealRecipe()?.[32mfiber[37m"><b>Fiber:</b> {{ mealRecip...
+          ╵                                 [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:72:
+[37m      214 │ ..."mealRecipe()?.fiber"><b>Fiber:</b> {{ mealRecipe()?.[32mfiber[37m }}</p>
+          ╵                                                         [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:34:
+[37m      213 │ ...    <p *ngIf="mealRecipe()?.[32mprotein[37m"><b>Protein:</b> {{ mealRe...
+          ╵                                [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'protein' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'protein' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:213:76:
+[37m      213 │ ...ecipe()?.protein"><b>Protein:</b> {{ mealRecipe()?.[32mprotein[37m }}</p>
+          ╵                                                       [32m~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:34:
+[37m      214 │ ...     <p *ngIf="mealRecipe()?.[32mfiber[37m"><b>Fiber:</b> {{ mealRecip...
+          ╵                                 [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'fiber' does not exist on type 'RecipeItem | LocalRecipe'.
+  Property 'fiber' does not exist on type 'RecipeItem'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:214:72:
+[37m      214 │ ..."mealRecipe()?.fiber"><b>Fiber:</b> {{ mealRecipe()?.[32mfiber[37m }}</p>
+          ╵                                                         [32m~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:212:15:
+[37m      212 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetProgressOnce' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:321:30:
+[37m      321 │ ...onst resetState = this.[32mresetProgressOnce[37m(state.checklist, stat...
+          ╵                           [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'enforceMedicineWindows' does not exist on type 'AppComponent'. Did you mean 'enforceTimeWindows'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:329:28:
+[37m      329 │ ...is.medicines = this.[32menforceMedicineWindows[37m(resetState.medicines);
+          ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  'enforceTimeWindows' is declared here.
+
+    src/app/app.component.ts:708:10:
+[37m      708 │   private [32menforceTimeWindows[37m(items: ChecklistItem[]) {
+          ╵           [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'isMedicineMissed' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:523:13:
+[37m      523 │     if (this.[32misMedicineMissed[37m(medicine)) return;
+          ╵              [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'shouldNotifyChecklist' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:606:16:
+[37m      606 │       if (!this.[32mshouldNotifyChecklist[37m(item)) continue;
+          ╵                 [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'notifyOnce' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:607:11:
+[37m      607 │       this.[32mnotifyOnce[37m(
+          ╵            [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'todayKey' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:608:26:
+[37m      608 │         `checklist-${this.[32mtodayKey[37m()}-${item.id}`,
+          ╵                           [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'isMedicineMissed' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:614:16:
+[37m      614 │       if (!this.[32misMedicineMissed[37m(medicine)) continue;
+          ╵                 [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'notifyOnce' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:615:11:
+[37m      615 │       this.[32mnotifyOnce[37m(
+          ╵            [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'todayKey' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:616:25:
+[37m      616 │         `medicine-${this.[32mtodayKey[37m()}-${index}`,
+          ╵                          [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2554: Expected 1 arguments, but got 2.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:302:132:
+[37m      302 │ ...="soft-card medicine-card" [ngClass]="medicineTone(medicine, [32mi[37m)">
+          ╵                                                                 [32m^[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:210:15:
+[37m      210 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'renotify' does not exist in type 'NotificationOptions'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:696:6:
+[37m      696 │       [32mrenotify[37m: true,
+          ╵       [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'renotify' does not exist in type 'NotificationOptions'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:696:6:
+[37m      696 │       [32mrenotify[37m: true,
+          ╵       [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'renotify' does not exist in type 'NotificationOptions'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:696:6:
+[37m      696 │       [32mrenotify[37m: true,
+          ╵       [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setupPushMessages' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:345:11:
+[37m      345 │       this.[32msetupPushMessages[37m();
+          ╵            [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setupPushMessages' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:345:11:
+[37m      345 │       this.[32msetupPushMessages[37m();
+          ╵            [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'registerPushToken' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:580:31:
+[37m      580 │       const token = await this.[32mregisterPushToken[37m();
+          ╵                                [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setupPushMessages' does not exist on type 'AppComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:589:11:
+[37m      589 │       this.[32msetupPushMessages[37m();
+          ╵            [32m~~~~~~~~~~~~~~~~~[0m
+
+

@@ -49,6 +49,35 @@ export class AamService {
     );
   }
 
+  saveWeeklyPlan(weeklyPlan: WeeklyPlanItem[]) {
+    return this.http.put(this.firebaseUrl('aam/weeklyPlan'), weeklyPlan).pipe(
+      catchError(() => of(null)),
+    );
+  }
+
+  saveMonthlyHealth(monthlyHealth: MonthlyHealth) {
+    return this.http.put(this.firebaseUrl('aam/monthlyHealth'), monthlyHealth).pipe(
+      catchError(() => of(null)),
+    );
+  }
+
+  saveMedicines(medicines: MedicineItem[]) {
+    return this.http.put(this.firebaseUrl('aam/medicines'), medicines).pipe(
+      catchError(() => of(null)),
+    );
+  }
+
+  savePushToken(token: string) {
+    const key = btoa(token).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+    return this.http.put(this.firebaseUrl(`aam/pushTokens/${key}`), {
+      token,
+      user: this.user().role,
+      updatedAt: new Date().toISOString(),
+    }).pipe(
+      catchError(() => of(null)),
+    );
+  }
+
   listenChecklist(onValue: (items: ChecklistItem[]) => void) {
     const source = new EventSource(this.firebaseUrl('aam/checklist'));
     const handleEvent = (event: MessageEvent<string>) => {

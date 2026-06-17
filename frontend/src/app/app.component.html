@@ -1,4 +1,23 @@
 <main class="app-shell">
+  <section *ngIf="showSplash()" class="splash-screen">
+    <div class="splash-card">
+      <img src="app-icon.jpeg" alt="AAM">
+      <h1>AAM</h1>
+      <div class="splash-dots"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <div *ngIf="alertToast()" class="alert-toast">
+    <mat-icon>notifications_active</mat-icon>
+    <div>
+      <strong>{{ alertToast()?.title }}</strong>
+      <span>{{ alertToast()?.body }}</span>
+    </div>
+    <button type="button" (click)="dismissAlertToast()" aria-label="Close alert">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
   <header class="topbar">
     <button class="logo-button" type="button" (click)="active.set(role() === 'admin' ? 'admin' : 'mom')">AAM</button>
     <nav class="desktop-nav">
@@ -8,18 +27,21 @@
       </button>
     </nav>
     <div class="admin-switch">
-      <button class="hamburger-button" type="button" (click)="adminMenuOpen.set(!adminMenuOpen())" aria-label="Open admin menu">
-        <mat-icon>menu</mat-icon>
+      <button class="profile-button" type="button" (click)="profileMenuOpen.set(!profileMenuOpen())" aria-label="Profile">
+        <img src="app-icon.jpeg" alt="Profile">
       </button>
-      <div *ngIf="adminMenuOpen()" class="switch-menu">
-        <button type="button" (click)="switchRole('mom')"><mat-icon>home</mat-icon><span>Mom home</span></button>
-        <button type="button" (click)="switchRole('admin')"><mat-icon>admin_panel_settings</mat-icon><span>Admin</span></button>
+      <div *ngIf="profileMenuOpen()" class="profile-menu">
+        <label class="notification-toggle" [class.enabled]="pushStatus() === 'Push alerts connected'">
+          <span>Notifications</span>
+          <input type="checkbox" [checked]="pushStatus() === 'Push alerts connected'" (change)="toggleNotifications($any($event.target).checked)">
+          <i></i>
+        </label>
       </div>
     </div>
   </header>
 
   <section *ngIf="active() === 'mom'" class="page">
-    <div class="summary-row">
+    <div class="home-overview">
       <mat-card class="soft-card date-card">
         <strong>{{ today | date:'EEEE' }}</strong>
         <span>{{ today | date:'MMM d, y' }}</span>
@@ -29,8 +51,28 @@
         <span>Today</span>
       </mat-card>
       <mat-card class="soft-card health-card">
+        <button class="small-card-icon" type="button" (click)="sugarOpen.set(true)" aria-label="Add sugar reading">
+          <mat-icon>add</mat-icon>
+        </button>
         <strong>Monthly sugar</strong>
         <span>{{ monthlyHealth.notes }}</span>
+      </mat-card>
+      <mat-card class="soft-card stats-wide-card">
+        <div class="section-title">
+          <h2>Stats</h2>
+          <span>{{ completion() }}% done</span>
+        </div>
+        <div class="wide-graph">
+          <span [style.height]="graphHeight(homeStats().meals)"><b>{{ homeStats().meals }}%</b><em>Meals</em></span>
+          <span [style.height]="graphHeight(homeStats().tablets)"><b>{{ homeStats().tablets }}%</b><em>Tablets</em></span>
+          <span [style.height]="graphHeight(homeStats().water)"><b>{{ homeStats().water }}%</b><em>Water</em></span>
+          <span [style.height]="graphHeight(homeStats().walking)"><b>{{ homeStats().walking }}%</b><em>Walking</em></span>
+        </div>
+        <div class="stats-footer">
+          <span>Missed meals {{ missedItems().length }}</span>
+          <span>Done {{ completion() }}%</span>
+          <span>BP {{ monthlyHealth.bp || '-' }}</span>
+        </div>
       </mat-card>
     </div>
 
@@ -40,62 +82,74 @@
         <div class="task-head">
           <div>
             <h2>{{ item.label }}</h2>
-            <p>{{ item.detail }}</p>
           </div>
+          <button *ngIf="item.status === 'Missed'" class="small-card-icon" type="button" (click)="reasonItem.set(item)" aria-label="Add missed reason">
+            <mat-icon>help</mat-icon>
+          </button>
         </div>
-        <div class="task-meta">
-          <span>{{ windowLabel(item) }}</span>
-          <b>{{ item.status }}</b>
-          <span>{{ item.completedAt || 'Not done' }}</span>
-        </div>
-        <button mat-flat-button class="primary-button" [disabled]="!canMarkNow(item) || item.status === 'Missed'" (click)="markDone(item)">{{ buttonText(item) }}</button>
-        <mat-form-field *ngIf="item.status === 'Missed'" class="reason-field" appearance="outline">
-          <mat-label>Reason missed</mat-label>
-          <input matInput [ngModel]="item.missedReason || ''" (ngModelChange)="setMissedReason(item, $event)">
-        </mat-form-field>
+        <div class="task-time">{{ windowLabel(item) }}</div>
+        <button mat-flat-button class="primary-button" [disabled]="item.status !== 'Missed' && !canMarkNow(item)" (click)="item.status === 'Missed' ? reasonItem.set(item) : markDone(item)">{{ buttonText(item) }}</button>
       </mat-card>
       <mat-card class="soft-card task-card today-task-card">
         <div class="task-head">
           <div>
             <h2>Today's Meal</h2>
-            <p>{{ todayMeal[0]?.menu || 'Meal plan loading' }}</p>
           </div>
         </div>
         <div class="task-meta">
-          <span>All day</span>
-          <b>{{ todayMeal.length }} meals</b>
-          <span>{{ todayTotals().calories }} cal</span>
+          <span>View meals</span>
         </div>
-        <button mat-flat-button class="primary-button" (click)="active.set('today')">Open Meals</button>
+        <button mat-flat-button class="primary-button yellow-button" (click)="active.set('today')">Open Meals</button>
       </mat-card>
     </div>
 
-    <div class="two-column">
-      <mat-card class="soft-card meal-summary-card">
-        <div class="section-title">
-          <h2>Today's Meal</h2>
-          <button mat-stroked-button (click)="active.set('today')">Change Menu</button>
-        </div>
-        <article *ngFor="let meal of todayMeal" class="mini-row meal-summary-row">
-          <strong>{{ meal.meal }}</strong>
-          <span>{{ meal.menu }}</span>
-        </article>
-        <p *ngIf="!todayMeal.length" class="empty-note">No meal data in Firebase yet.</p>
-      </mat-card>
-      <mat-card class="soft-card graph-card">
-        <h2>Health Updates</h2>
-        <div class="mini-graph">
-          <span [style.height]="graphHeight(stats.meals)"><b>{{ stats.meals }}%</b><em>Meals</em></span>
-          <span [style.height]="graphHeight(stats.tablets)"><b>{{ stats.tablets }}%</b><em>Tabs</em></span>
-          <span [style.height]="graphHeight(stats.water)"><b>{{ stats.water }}%</b><em>Water</em></span>
-          <span [style.height]="graphHeight(stats.walking)"><b>{{ stats.walking }}%</b><em>Walk</em></span>
-        </div>
-        <div class="health-line">
-          <span>Sugar {{ monthlyHealth.fastingSugar || '-' }}/{{ monthlyHealth.ppSugar || '-' }}</span>
-          <span>BP {{ monthlyHealth.bp || '-' }}</span>
-        </div>
+    <div *ngIf="reasonItem()" class="modal-backdrop" (click)="reasonItem.set(null)">
+      <mat-card class="soft-card reason-modal" (click)="$event.stopPropagation()">
+        <button class="close" type="button" (click)="reasonItem.set(null)"><mat-icon>close</mat-icon></button>
+        <h2>Why missed?</h2>
+        <p>{{ reasonItem()?.label }} - {{ windowLabel(reasonItem()!) }}</p>
+        <mat-form-field appearance="outline">
+          <mat-label>Reason</mat-label>
+          <textarea matInput #missedReason rows="3">{{ reasonItem()?.missedReason || '' }}</textarea>
+        </mat-form-field>
+        <button mat-flat-button class="primary-button" (click)="saveMissedReason(missedReason.value)">Save</button>
       </mat-card>
     </div>
+
+    <div *ngIf="sugarOpen()" class="modal-backdrop" (click)="sugarOpen.set(false)">
+      <mat-card class="soft-card reason-modal" (click)="$event.stopPropagation()">
+        <button class="close" type="button" (click)="sugarOpen.set(false)"><mat-icon>close</mat-icon></button>
+        <h2>Sugar readings</h2>
+        <div class="sugar-form-grid">
+          <mat-form-field appearance="outline">
+            <mat-label>Fasting sugar</mat-label>
+            <input matInput type="number" #fasting [value]="monthlyHealth.fastingSugar || ''">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>PP sugar</mat-label>
+            <input matInput type="number" #pp [value]="monthlyHealth.ppSugar || ''">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>HbA1c</mat-label>
+            <input matInput type="number" step="0.1" #hba1c [value]="monthlyHealth.hba1c || ''">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>BP</mat-label>
+            <input matInput #bp [value]="monthlyHealth.bp || ''">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Weight</mat-label>
+            <input matInput type="number" #weight [value]="monthlyHealth.weight || ''">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="span-2">
+            <mat-label>Notes</mat-label>
+            <input matInput #notes [value]="monthlyHealth.notes || ''">
+          </mat-form-field>
+        </div>
+        <button mat-flat-button class="primary-button" (click)="saveSugarReadings({ fastingSugar: fasting.value, ppSugar: pp.value, hba1c: hba1c.value, bp: bp.value, weight: weight.value, notes: notes.value })">Save</button>
+      </mat-card>
+    </div>
+
   </section>
 
   <section *ngIf="active() === 'admin'" class="page">
@@ -134,30 +188,58 @@
 
   <section *ngIf="active() === 'today'" class="page">
     <h1>Today's Meal</h1>
-    <div class="card-grid">
+    <div class="today-meal-list">
       <mat-card *ngFor="let meal of todayMeal" class="soft-card meal-card">
         <div class="section-title">
           <h2>{{ meal.meal }}</h2>
-          <button mat-stroked-button (click)="startMenuChange(meal)">Change Menu</button>
+          <button mat-stroked-button (click)="startMenuChange(meal)">{{ isReplacingMeal(meal) ? 'Close' : 'Change Menu' }}</button>
         </div>
-        <p class="meal-menu">{{ meal.menu }}</p>
-        <div class="pill-line"><span>Curry</span><b>{{ meal.curry }}</b></div>
-        <div class="pill-line"><span>Portion</span><b>{{ meal.portion }}</b></div>
-        <div class="macro-grid">
-          <span *ngFor="let macro of macroList(meal)"><b>{{ macro.value }}</b>{{ macro.label }}</span>
+        <div class="meal-detail-panel">
+          <div><span>{{ mainDishLabel(meal) }}</span><b>{{ meal.curry }}</b></div>
+          <div><span>Portion</span><b>{{ meal.portion }}</b></div>
         </div>
-        <p class="note">{{ meal.alternative }}</p>
-        <div *ngIf="replacingMeal() === meal.meal" class="menu-picker">
-          <mat-form-field appearance="outline">
-            <mat-label>Search menu</mat-label>
-            <input matInput [ngModel]="menuSearch()" (ngModelChange)="menuSearch.set($event)">
-          </mat-form-field>
-          <button *ngFor="let recipe of menuMatches()" type="button" (click)="chooseMenu(meal, recipe)">
-            <strong>{{ recipe.name }}</strong>
-            <span>{{ recipe.vegetable }}</span>
+        <div *ngIf="isReplacingMeal(meal)" class="menu-picker">
+          <button *ngFor="let option of menuMatches()" type="button" (click)="chooseMenu(meal, option)">
+            <strong>{{ option.name }}</strong>
+            <span>{{ option.protein }}g protein</span>
           </button>
         </div>
-        <button mat-flat-button class="primary-button" (click)="openRecipeForMeal(meal)">Recipe</button>
+        <div class="meal-actions">
+          <button class="nutrition-button" type="button" (click)="nutritionMeal.set(meal)">
+            <mat-icon>monitor_heart</mat-icon>
+            <span>Nutrition</span>
+            <b>{{ mealNutrition(meal).protein }}g protein</b>
+          </button>
+          <button mat-flat-button class="primary-button" (click)="openRecipeForMeal(meal)">Recipe</button>
+        </div>
+      </mat-card>
+    </div>
+
+    <div *ngIf="nutritionMeal()" class="modal-backdrop" (click)="nutritionMeal.set(null)">
+      <mat-card class="soft-card reason-modal" (click)="$event.stopPropagation()">
+        <button class="close" type="button" (click)="nutritionMeal.set(null)"><mat-icon>close</mat-icon></button>
+        <h2>{{ nutritionMeal()?.meal }} nutrition</h2>
+        <div class="nutrition-panel detail">
+          <span><b>{{ mealNutrition(nutritionMeal()!).calories }}</b><em>Calories</em></span>
+          <span *ngFor="let macro of macroList(nutritionMeal()!)"><b>{{ macro.value }}</b><em>{{ macro.label }}</em></span>
+        </div>
+      </mat-card>
+    </div>
+
+    <div *ngIf="mealRecipe()" class="modal-backdrop" (click)="mealRecipe.set(null)">
+      <mat-card class="soft-card weekly-recipe-modal" (click)="$event.stopPropagation()">
+        <button class="close" type="button" (click)="mealRecipe.set(null)"><mat-icon>close</mat-icon></button>
+        <h2>{{ mealRecipe()?.name }}</h2>
+        <article class="recipe-popup-card">
+          <p><b>Ingredients:</b> {{ mealRecipe()?.ingredients }}</p>
+          <p *ngIf="recipeProtein(mealRecipe())"><b>Protein:</b> {{ recipeProtein(mealRecipe()) }}</p>
+          <p *ngIf="recipeFiber(mealRecipe())"><b>Fiber:</b> {{ recipeFiber(mealRecipe()) }}</p>
+          <ol>
+            <li *ngFor="let step of mealRecipe()?.steps">{{ step }}</li>
+          </ol>
+          <p><b>Serving:</b> {{ mealRecipe()?.serving }}</p>
+          <p><b>Note:</b> {{ mealRecipe()?.diabetes }}</p>
+        </article>
       </mat-card>
     </div>
   </section>
@@ -166,12 +248,33 @@
     <h1>Weekly Meal Plan</h1>
     <div class="week-list">
       <mat-card *ngFor="let day of rotatedWeeklyPlan()" class="soft-card week-card">
-        <h2>{{ day.day }}</h2>
-        <div><strong>Breakfast</strong><span>{{ day.breakfast }}</span></div>
-        <div><strong>Lunch</strong><span>{{ day.lunch }}</span></div>
-        <div><strong>Dinner</strong><span>{{ day.dinner }}</span></div>
-        <p class="note">{{ day.alternative }}</p>
-        <button mat-stroked-button (click)="search.set(day.curry); selectedRecipe.set(null); active.set('recipes')">Recipe</button>
+        <div class="week-card-head">
+          <h2>{{ day.day }}</h2>
+          <button mat-flat-button class="primary-button" (click)="weeklyRecipeDay.set(day)">Recipes</button>
+        </div>
+        <div class="week-meal-grid">
+          <article *ngFor="let meal of weeklyMealCards(day)" class="week-meal-card">
+            <strong>{{ meal.label }}</strong>
+            <span>{{ meal.value }}</span>
+          </article>
+        </div>
+      </mat-card>
+    </div>
+
+    <div *ngIf="weeklyRecipeDay()" class="modal-backdrop" (click)="weeklyRecipeDay.set(null)">
+      <mat-card class="soft-card weekly-recipe-modal" (click)="$event.stopPropagation()">
+        <button class="close" type="button" (click)="weeklyRecipeDay.set(null)"><mat-icon>close</mat-icon></button>
+        <h2>{{ weeklyRecipeDay()?.day }} recipes</h2>
+        <div class="weekly-recipe-list">
+          <article *ngFor="let recipe of weeklyRecipes(weeklyRecipeDay()!)" class="recipe-popup-card">
+            <h3>{{ recipe.name }}</h3>
+            <p><b>Ingredients:</b> {{ recipe.ingredients }}</p>
+            <ol>
+              <li *ngFor="let step of recipe.steps">{{ step }}</li>
+            </ol>
+          </article>
+        </div>
+        <p *ngIf="!weeklyRecipes(weeklyRecipeDay()!).length" class="empty-note">No matching recipes found.</p>
       </mat-card>
     </div>
   </section>
@@ -188,6 +291,8 @@
       <button class="close" type="button" (click)="selectedRecipe.set(null)"><mat-icon>arrow_back</mat-icon></button>
       <h2>{{ selectedRecipe()?.name }}</h2>
       <p><b>Ingredients:</b> {{ selectedRecipe()?.ingredients }}</p>
+      <p *ngIf="selectedRecipe()?.protein"><b>Protein:</b> {{ selectedRecipe()?.protein }}</p>
+      <p *ngIf="selectedRecipe()?.fiber"><b>Fiber:</b> {{ selectedRecipe()?.fiber }}</p>
       <ol>
         <li *ngFor="let step of selectedRecipe()?.steps">{{ step }}</li>
       </ol>
@@ -211,14 +316,22 @@
 
   <section *ngIf="active() === 'reminders'" class="page">
     <h1>Medicine Reminder</h1>
-    <div class="card-grid">
-      <mat-card *ngFor="let medicine of medicines" class="soft-card medicine-card" [class]="statusClass(medicine.status)">
-        <h2>{{ medicine.name }}</h2>
-        <p>{{ medicine.dosage }}</p>
-        <div class="pill-line"><span>Time</span><b>{{ medicine.time }}</b></div>
-        <div class="pill-line"><span>Food</span><b>{{ medicine.food }}</b></div>
-        <div class="pill-line"><span>Status</span><b>{{ medicine.status }}</b></div>
-        <button mat-flat-button class="primary-button">Taken</button>
+    <div class="card-grid medicine-grid">
+      <mat-card *ngFor="let medicine of medicines; let i = index" class="soft-card medicine-card" [ngClass]="medicineTone(medicine, i)">
+        <h2>{{ medicineLabel(medicine, i) }}</h2>
+        <div class="medicine-info">
+          <span>{{ medicine.dosage }}</span>
+          <b>{{ medicine.time }}</b>
+        </div>
+        <div class="medicine-info">
+          <span>Food</span>
+          <b>{{ medicine.food }}</b>
+        </div>
+        <div class="medicine-info">
+          <span>Status</span>
+          <b>{{ medicine.status }}</b>
+        </div>
+        <button mat-flat-button class="primary-button" [disabled]="medicine.status.toLowerCase() === 'taken'" (click)="markMedicineTaken(medicine)">Taken</button>
       </mat-card>
     </div>
     <p *ngIf="!medicines.length" class="empty-note">No medicine reminders in Firebase yet.</p>
