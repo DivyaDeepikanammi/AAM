@@ -20,7 +20,8 @@
 
 .app-shell {
   min-height: 100vh;
-  padding-bottom: 92px;
+  overflow-x: hidden;
+  padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px));
 }
 
 .alert-toast {
@@ -184,7 +185,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  width: min(1180px, calc(100% - 28px));
+  width: min(1180px, calc(100% - clamp(20px, 4vw, 40px)));
   margin: 0 auto;
   padding: 12px 0 8px;
   background: transparent;
@@ -249,10 +250,10 @@
   top: calc(100% + 8px);
   right: 0;
   z-index: 30;
-  width: 190px;
-  padding: 10px;
+  width: 172px;
+  padding: 8px;
   border-radius: 8px;
-  background: white;
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: var(--soft-shadow);
 }
 
@@ -260,15 +261,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
+  min-height: 36px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: var(--ice-blue);
   color: var(--ink);
   font-size: 14px;
+  cursor: pointer;
 }
 
 .notification-toggle input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification-toggle i {
+  position: relative;
   width: 38px;
   height: 22px;
-  accent-color: var(--muted-blue);
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.notification-toggle i::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--muted-blue);
+  content: "";
+  transition: transform 0.18s ease;
+}
+
+.notification-toggle.enabled {
+  background: var(--soft-yellow);
+}
+
+.notification-toggle.enabled i::after {
+  transform: translateX(16px);
 }
 
 .desktop-nav {
@@ -309,7 +344,7 @@
 }
 
 .page {
-  width: min(1180px, calc(100% - 28px));
+  width: min(1180px, calc(100% - clamp(28px, 6vw, 56px)));
   margin: 0 auto;
 }
 
@@ -326,8 +361,8 @@
 
 .page {
   display: grid;
-  gap: 16px;
-  padding: 8px 0 28px;
+  gap: 12px;
+  padding: 4px 0 28px;
 }
 
 .narrow {
@@ -373,7 +408,7 @@ h2 {
 
 .home-overview {
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(82px, 1fr));
   grid-template-areas:
     "date stats"
     "today stats"
@@ -411,7 +446,7 @@ h2 {
 .stats-wide-card {
   grid-area: stats;
   display: grid;
-  min-height: 330px;
+  min-height: 282px;
   gap: 12px;
   align-content: space-between;
   padding: 14px;
@@ -439,12 +474,13 @@ h2 {
 }
 
 .card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
 }
 
 .task-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
-  max-width: 760px;
+  max-width: none;
   gap: 12px;
 }
 
@@ -491,11 +527,15 @@ h2 {
   overflow-wrap: anywhere;
 }
 
+.medicine-taken-button {
+  background: var(--rose-pink) !important;
+}
+
 .task-card {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 12px;
-  min-height: 156px;
+  gap: 10px;
+  min-height: 138px;
   align-content: space-between;
 }
 
@@ -1277,7 +1317,7 @@ h2 {
 .bottom-nav {
   position: fixed;
   right: 14px;
-  bottom: 14px;
+  bottom: calc(14px + env(safe-area-inset-bottom, 0px));
   left: 14px;
   z-index: 12;
   display: none;
@@ -1312,11 +1352,11 @@ h2 {
   }
 
   .stats-wide-card {
-    min-height: 330px;
+    min-height: 260px;
   }
 
   .wide-graph {
-    height: 205px;
+    height: 160px;
   }
 
   .page-head {
@@ -1327,6 +1367,11 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .task-grid,
+  .medicine-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .today-meal-list .meal-card {
     grid-template-columns: 1fr;
     align-items: stretch;
@@ -1335,15 +1380,15 @@ h2 {
 
 @media (max-width: 560px) {
   .topbar {
-    width: min(420px, calc(100% - 28px));
+    width: min(430px, calc(100% - 20px));
     padding: 10px 0 8px;
   }
 
   .home-overview {
     width: min(420px, 100%);
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-rows: repeat(3, minmax(74px, 1fr));
+    gap: 8px;
   }
 
   .date-card,
@@ -1354,13 +1399,13 @@ h2 {
   }
 
   .stats-wide-card {
-    min-height: 300px;
-    padding: 12px;
+    min-height: 238px;
+    padding: 10px;
   }
 
   .wide-graph {
     gap: 5px;
-    height: 172px;
+    height: 126px;
   }
 
   .wide-graph span {
@@ -1394,7 +1439,7 @@ h2 {
 
   .task-grid {
     width: min(420px, 100%);
-    gap: 10px;
+    gap: 8px;
   }
 
   .task-card,
@@ -1407,7 +1452,8 @@ h2 {
   }
 
   .task-card {
-    min-height: 130px;
+    min-height: 116px;
+    gap: 8px;
   }
 
   .task-card h2 {
@@ -1494,5 +1540,101 @@ h2 {
 
   .week-meal-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .page {
+    width: calc(100% - 24px);
+  }
+
+  .topbar {
+    width: calc(100% - 24px);
+  }
+
+  .home-overview {
+    width: 100%;
+  }
+
+  .task-grid,
+  .medicine-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .task-card,
+  .medicine-card {
+    padding: 7px;
+  }
+
+  .task-time {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom-nav {
+    right: 8px;
+    left: 8px;
+    gap: 2px;
+    padding: 7px;
+  }
+
+  .bottom-nav button {
+    min-width: 0;
+    font-size: 11px;
+  }
+
+  .bottom-nav mat-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .page,
+  .topbar {
+    width: calc(100% - 18px);
+  }
+
+  .card-grid,
+  .task-grid,
+  .medicine-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .task-grid {
+    width: 100%;
+  }
+
+  .home-overview {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "date"
+      "today"
+      "sugar"
+      "stats";
+  }
+
+  .stats-wide-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 340px) {
+  .card-grid,
+  .task-grid,
+  .medicine-grid,
+  .recipe-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-radius: 18px;
+  }
+
+  .bottom-nav button {
+    font-size: 10px;
   }
 }

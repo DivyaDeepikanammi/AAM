@@ -252,8 +252,9 @@ export class AppComponent implements OnInit, OnDestroy {
   private notificationTimer?: ReturnType<typeof setInterval>;
   private alertToastTimer?: ReturnType<typeof setTimeout>;
   private pushListenerStarted = false;
+  private alertsReadyAt = Date.now() + 120000;
   private readonly notified = new Set<string>();
-  private readonly progressResetKey = 'aam-progress-reset-2026-06-17-v2';
+  private readonly progressResetKey = 'aam-progress-reset-2026-06-17-v3';
   private readonly windows: Record<string, { start: number; end: number; label: string }> = {
     breakfast: { start: 7 * 60, end: 10 * 60, label: '7 AM - 10 AM' },
     lunch: { start: 12 * 60, end: 14 * 60, label: '12 PM - 2 PM' },
@@ -261,7 +262,7 @@ export class AppComponent implements OnInit, OnDestroy {
     'morning-tablet': { start: 8 * 60, end: 10 * 60, label: '8 AM - 10 AM' },
     'afternoon-tablet': { start: 13 * 60, end: 15 * 60, label: '1 PM - 3 PM' },
     'night-tablet': { start: 20 * 60, end: 22 * 60, label: '8 PM - 10 PM' },
-    walking: { start: 17 * 60, end: 20 * 60, label: '5 PM - 8 PM' },
+    walking: { start: 17 * 60, end: 22 * 60, label: '5 PM - 10 PM' },
     water: { start: 7 * 60, end: 22 * 60, label: '7 AM - 10 PM' },
   };
 
@@ -555,7 +556,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this.alertPermission.set(permission);
       if (permission === 'granted') {
         this.showAppNotification('AAM alerts enabled', 'Missed meals and tablets will show here.');
-        this.sendDueNotifications();
+        this.alertsReadyAt = Date.now() + 120000;
       }
     });
   }
@@ -704,7 +705,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.alertPermission.set(Notification.permission);
     if (this.notificationTimer) clearInterval(this.notificationTimer);
     this.notificationTimer = setInterval(() => this.sendDueNotifications(), 60000);
-    this.sendDueNotifications();
   }
 
   private async setupPushMessages() {
@@ -738,27 +738,38 @@ export class AppComponent implements OnInit, OnDestroy {
       this.medicines = nextMedicines;
       this.aam.saveMedicines(this.medicines).subscribe();
     }
-    if (!('Notification' in window) || Notification.permission !== 'granted') return;
+    if (!('Notification' in window) || Notification.permission !== 'granted' || Date.now() < this.alertsReadyAt) return;
+    const candidates: Array<{ key: string; title: string; body: string; due: number }> = [];
     for (const item of this.checklist()) {
       if (!this.shouldNotifyChecklist(item)) continue;
-      this.notifyOnce(
-        `checklist-${this.todayKey()}-${item.id}`,
-        `${item.label} missed`,
-        this.windowLabel(item),
-      );
+      candidates.push({
+        key: `checklist-${this.todayKey()}-${item.id}`,
+        title: `${item.label} missed`,
+        body: this.windowLabel(item),
+        due: this.checklistDueMinutes(item),
+      });
     }
     for (const [index, medicine] of this.medicines.entries()) {
       if (!this.isMedicineMissed(medicine)) continue;
-      this.notifyOnce(
-        `medicine-${this.todayKey()}-${index}-${medicine.time}`,
-        `${this.medicineLabel(medicine, index)} missed`,
-        medicine.time,
-      );
+      candidates.push({
+        key: `medicine-${this.todayKey()}-${index}-${medicine.time}`,
+        title: `${this.medicineLabel(medicine, index)} missed`,
+        body: medicine.time,
+        due: this.medicineDueMinutes(medicine),
+      });
     }
+    const next = candidates
+      .filter((candidate) => !this.notified.has(candidate.key))
+      .sort((a, b) => a.due - b.due)[0];
+    if (next) this.notifyOnce(next.key, next.title, next.body);
   }
 
   private shouldNotifyChecklist(item: ChecklistItem) {
     return item.status === 'Missed' || (item.status === 'Pending' && this.isExpired(item));
+  }
+
+  private checklistDueMinutes(item: ChecklistItem) {
+    return this.windows[item.id]?.end ?? this.parseTime(item.time);
   }
 
   private notifyOnce(key: string, title: string, body: string) {
@@ -821,8 +832,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private isMedicineMissed(medicine: MedicineItem) {
     if (medicine.status.toLowerCase() === 'taken') return false;
-    const minutes = this.parseTime(medicine.time);
+    const minutes = this.medicineDueMinutes(medicine);
     return minutes >= 0 && this.minutesNow() > minutes;
+  }
+
+  private medicineDueMinutes(medicine: MedicineItem) {
+    const minutes = this.parseTime(medicine.time);
+    return minutes < 0 ? -1 : minutes + 30;
   }
 
   private todayKey() {

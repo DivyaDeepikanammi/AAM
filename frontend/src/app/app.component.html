@@ -331,7 +331,7 @@
           <span>Status</span>
           <b>{{ medicine.status }}</b>
         </div>
-        <button mat-flat-button class="primary-button" [disabled]="medicine.status.toLowerCase() === 'taken'" (click)="markMedicineTaken(medicine)">Taken</button>
+        <button mat-flat-button class="primary-button medicine-taken-button" [disabled]="medicine.status.toLowerCase() === 'taken'" (click)="markMedicineTaken(medicine)">Taken</button>
       </mat-card>
     </div>
     <p *ngIf="!medicines.length" class="empty-note">No medicine reminders in Firebase yet.</p>
